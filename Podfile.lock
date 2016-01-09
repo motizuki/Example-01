@@ -1,0 +1,18 @@
+PODS:
+  - DFImageManager (2.0.0):
+    - DFImageManager/Core (= 2.0.0)
+    - DFImageManager/UI (= 2.0.0)
+  - DFImageManager/Core (2.0.0)
+  - DFImageManager/UI (2.0.0):
+    - DFImageManager/Core
+  - Firebase (2.5.0)
+
+DEPENDENCIES:
+  - DFImageManager
+  - Firebase
+
+SPEC CHECKSUMS:
+  DFImageManager: eac2a106f3995312ebdfbd6f591ee43ad505b5fd
+  Firebase: 744617c0733b45198f9486ebd5cac64ec2d10d79
+
+COCOAPODS: 0.39.0

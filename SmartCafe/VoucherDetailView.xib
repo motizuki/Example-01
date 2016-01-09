@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VoucherDetailView" customModule="SmartCafe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="529" height="636"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFg-XW-lIg">
+                    <rect key="frame" x="0.0" y="0.0" width="529" height="636"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zvS-vR-qAF">
+                        <rect key="frame" x="0.0" y="0.0" width="529" height="636"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="600" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY4-Tv-0Pi">
+                                <rect key="frame" x="15" y="284" width="499" height="293"/>
+                                <string key="text">Proin semper nunc id purus bibendum convallis. Aliquam eu sagittis augue. Praesent massa sapien, faucibus vel varius vel, tempor eget odio. Ut sit amet varius odio.</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NO-e1-Ufg">
+                                <rect key="frame" x="30" y="585" width="469" height="36"/>
+                                <color key="backgroundColor" red="0.29259214960000002" green="1" blue="0.59745608230000002" alpha="0.70238597972972971" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <state key="normal" title="Get offer  -  57 left">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getOffer:" destination="iN0-l3-epB" eventType="touchUpInside" id="OtM-8P-IeT"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="250" image="skipping_breakfast-diabetes" translatesAutoresizingMaskIntoConstraints="NO" id="cZW-Q0-Ujg">
+                                <rect key="frame" x="15" y="76" width="499" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="499" id="NH6-C8-6aJ"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="XkI-9d-wJC"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NH6-C8-6aJ"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="25% OFF FOOD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Py-So-cU7">
+                                <rect key="frame" x="8" y="8" width="513" height="34"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="12/10/2015 - 01/02/2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axW-Sa-oFw">
+                                <rect key="frame" x="8" y="50" width="513" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left" translatesAutoresizingMaskIntoConstraints="NO" id="3hw-qu-Wts">
+                                <rect key="frame" x="8" y="22" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ZgX-ow-iks"/>
+                                    <constraint firstAttribute="width" constant="20" id="c7V-O0-xAe"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="NfB-Lc-NA8">
+                                <rect key="frame" x="501" y="22" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="DEr-OL-Pre"/>
+                                    <constraint firstAttribute="height" constant="20" id="bLt-Ri-yMZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NfB-Lc-NA8" firstAttribute="bottom" secondItem="8Py-So-cU7" secondAttribute="bottom" id="18q-Dx-utq"/>
+                            <constraint firstItem="3hw-qu-Wts" firstAttribute="leading" secondItem="zvS-vR-qAF" secondAttribute="leading" constant="8" id="1uh-or-rfQ"/>
+                            <constraint firstItem="fY4-Tv-0Pi" firstAttribute="leading" secondItem="zvS-vR-qAF" secondAttribute="leading" constant="15" id="24w-Vs-ee7"/>
+                            <constraint firstItem="axW-Sa-oFw" firstAttribute="leading" secondItem="zvS-vR-qAF" secondAttribute="leading" constant="8" id="FJ8-0J-uXh"/>
+                            <constraint firstItem="7NO-e1-Ufg" firstAttribute="leading" secondItem="zvS-vR-qAF" secondAttribute="leading" constant="30" id="L6n-xt-fgm"/>
+                            <constraint firstAttribute="trailing" secondItem="axW-Sa-oFw" secondAttribute="trailing" constant="8" id="LJ8-kL-1tg"/>
+                            <constraint firstItem="7NO-e1-Ufg" firstAttribute="top" secondItem="fY4-Tv-0Pi" secondAttribute="bottom" constant="8" id="MQO-za-rfa"/>
+                            <constraint firstItem="axW-Sa-oFw" firstAttribute="top" secondItem="8Py-So-cU7" secondAttribute="bottom" constant="8" id="N6u-tT-8sx"/>
+                            <constraint firstAttribute="trailing" secondItem="8Py-So-cU7" secondAttribute="trailing" constant="8" id="PTc-mB-kDW"/>
+                            <constraint firstAttribute="trailing" secondItem="NfB-Lc-NA8" secondAttribute="trailing" constant="8" id="T7b-Kk-Mk5"/>
+                            <constraint firstAttribute="trailing" secondItem="fY4-Tv-0Pi" secondAttribute="trailing" constant="15" id="TVc-I8-Mvi"/>
+                            <constraint firstItem="8Py-So-cU7" firstAttribute="top" secondItem="zvS-vR-qAF" secondAttribute="top" constant="8" id="UQK-kZ-wQg"/>
+                            <constraint firstItem="cZW-Q0-Ujg" firstAttribute="top" secondItem="axW-Sa-oFw" secondAttribute="bottom" constant="5" id="WiT-N4-RMg"/>
+                            <constraint firstAttribute="trailing" secondItem="7NO-e1-Ufg" secondAttribute="trailing" constant="30" id="YGK-RB-aBf"/>
+                            <constraint firstItem="8Py-So-cU7" firstAttribute="leading" secondItem="zvS-vR-qAF" secondAttribute="leading" constant="8" id="eYI-nR-x2e"/>
+                            <constraint firstAttribute="bottom" secondItem="7NO-e1-Ufg" secondAttribute="bottom" constant="15" id="jIf-qf-8l1"/>
+                            <constraint firstItem="fY4-Tv-0Pi" firstAttribute="top" secondItem="cZW-Q0-Ujg" secondAttribute="bottom" constant="8" id="mWj-nt-QtZ"/>
+                            <constraint firstItem="3hw-qu-Wts" firstAttribute="bottom" secondItem="8Py-So-cU7" secondAttribute="bottom" id="pCf-zQ-wJ5"/>
+                            <constraint firstItem="cZW-Q0-Ujg" firstAttribute="leading" secondItem="zvS-vR-qAF" secondAttribute="leading" constant="15" id="xJu-fJ-K2a"/>
+                            <constraint firstAttribute="trailing" secondItem="cZW-Q0-Ujg" secondAttribute="trailing" constant="15" id="xuF-F5-2oc"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dFg-XW-lIg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2ef-0u-Sza"/>
+                <constraint firstAttribute="trailing" secondItem="dFg-XW-lIg" secondAttribute="trailing" id="RwT-kK-bRt"/>
+                <constraint firstItem="dFg-XW-lIg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="p5w-Y8-wgj"/>
+                <constraint firstAttribute="bottom" secondItem="dFg-XW-lIg" secondAttribute="bottom" id="z6G-ej-UJn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateRange" destination="axW-Sa-oFw" id="DDv-gg-lzA"/>
+                <outlet property="details" destination="fY4-Tv-0Pi" id="A1u-OJ-IXX"/>
+                <outlet property="image" destination="cZW-Q0-Ujg" id="vbw-EG-LEU"/>
+                <outlet property="title" destination="8Py-So-cU7" id="v7u-Gw-zuc"/>
+            </connections>
+            <point key="canvasLocation" x="245.5" y="291"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left" width="256" height="256"/>
+        <image name="right" width="256" height="256"/>
+        <image name="skipping_breakfast-diabetes" width="688" height="377"/>
+    </resources>
+</document>

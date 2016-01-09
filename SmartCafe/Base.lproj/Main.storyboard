@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EBb-6h-waZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Voucher View Controller-->
+        <scene sceneID="N6D-aF-4hg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LQK-9J-F1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="3xf-EE-jub" customClass="VoucherViewController" customModule="SmartCafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GMn-99-wkx"/>
+                        <viewControllerLayoutGuide type="bottom" id="HaO-9i-Iu4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dY5-cu-ARu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSb-qg-Gwj">
+                                <rect key="frame" x="267" y="289" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBe-vt-LO8">
+                                <rect key="frame" x="260" y="318" width="81" height="30"/>
+                                <state key="normal" title="Voucher list"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWq-T9-rFw">
+                                <rect key="frame" x="277" y="356" width="46" height="30"/>
+                                <state key="normal" title="Force get new data"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbr-ca-GQM">
+                                <rect key="frame" x="277" y="400" width="46" height="30"/>
+                                <state key="normal" title="Location change"/>
+                                <connections>
+                                    <action selector="forceLocationChange:" destination="3xf-EE-jub" eventType="touchUpInside" id="pgJ-mK-Ncg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hbr-ca-GQM" firstAttribute="top" secondItem="OWq-T9-rFw" secondAttribute="bottom" constant="14" id="29C-ML-JXm"/>
+                            <constraint firstItem="kBe-vt-LO8" firstAttribute="top" secondItem="QSb-qg-Gwj" secondAttribute="bottom" constant="8" id="5fl-ly-N3x"/>
+                            <constraint firstItem="OWq-T9-rFw" firstAttribute="centerX" secondItem="dY5-cu-ARu" secondAttribute="centerX" id="93k-D9-Kyg"/>
+                            <constraint firstItem="OWq-T9-rFw" firstAttribute="top" secondItem="kBe-vt-LO8" secondAttribute="bottom" constant="8" id="Jc8-zD-uwD"/>
+                            <constraint firstItem="QSb-qg-Gwj" firstAttribute="centerY" secondItem="dY5-cu-ARu" secondAttribute="centerY" id="TkV-a4-udN"/>
+                            <constraint firstItem="QSb-qg-Gwj" firstAttribute="centerX" secondItem="dY5-cu-ARu" secondAttribute="centerX" id="fOf-xX-gcr"/>
+                            <constraint firstItem="kBe-vt-LO8" firstAttribute="centerX" secondItem="dY5-cu-ARu" secondAttribute="centerX" id="fgM-VO-M11"/>
+                            <constraint firstItem="Hbr-ca-GQM" firstAttribute="centerX" secondItem="dY5-cu-ARu" secondAttribute="centerX" id="qQH-fg-4r2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detail" destination="QSb-qg-Gwj" id="JUA-EN-3vd"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="105" y="-218"/>
+        </scene>
+        <!--Second screen-->
+        <scene sceneID="1Lv-y2-ZHP">
+            <objects>
+                <viewController id="uup-kH-YY7" customClass="CompanyViewController" customModule="SmartCafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vLE-v5-stc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tb3-yH-6nH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NL7-7g-v8r">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second screen" id="8pQ-bg-fWL">
+                        <barButtonItem key="leftBarButtonItem" title="Login" id="0ZH-Iy-ggM">
+                            <connections>
+                                <action selector="login:" destination="uup-kH-YY7" id="pxB-gM-yZ7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="pEA-YT-rI6">
+                            <connections>
+                                <action selector="refresh" destination="uup-kH-YY7" id="t9W-Mp-bKk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="refreshBarButton" destination="pEA-YT-rI6" id="efG-IQ-dqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MRv-SP-WQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="623" y="552"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9mo-SD-iQT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EBb-6h-waZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="em0-7g-mxL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uup-kH-YY7" kind="relationship" relationship="rootViewController" id="OdI-t9-h1T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LUN-Qi-CxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="484"/>
+        </scene>
+    </scenes>
+</document>
