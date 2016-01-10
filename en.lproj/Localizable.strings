@@ -1,0 +1,11 @@
+/*
+  Locale.strings
+  SmartCafe
+
+  Created by Gustavo  Motizuki on 1/10/16.
+  Copyright © 2016 Gustavo Motizuki. All rights reserved.
+*/
+
+"loadingError" = "Sorry, we couldn't find your current location using your GPS, please try again.";
+"loading" = "Finding nearby vouchers.";
+"loadingNotFound" = "No vouchers found.";

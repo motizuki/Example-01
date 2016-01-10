@@ -46,7 +46,7 @@ class CompanyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavBar()
+        setupNavBar(UIImage(named: "logo")!)
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -56,7 +56,9 @@ class CompanyViewController: UIViewController {
         voucherView.removeFromSuperview()
         companyView.removeFromSuperview()
         refreshBarButton.enabled = false
-        loadingView.presentLoadingView("Finding nearby vouchers", viewController: self)
+        setupNavBar(UIImage(named: "logo")!)
+        let loadingLocStr = NSLocalizedString("loading", comment: "Loading voucher")
+        loadingView.presentLoadingView(loadingLocStr, viewController: self)
         locationManager.requestLocation()
     }
 
@@ -71,7 +73,8 @@ class CompanyViewController: UIViewController {
             didSet {
                 if totalCompanies <= loadedCompanies && totalCompanies > 0 {
                     if companyView.pageCompanies.count == 0 {
-                        showLoadingErrorMessage("No vouchers found")
+                        let loadingLocStr = NSLocalizedString("loadingNotFound", comment: "")
+                        showLoadingErrorMessage(loadingLocStr)
                     } else {
                        presentCompanyView()
                     }
@@ -104,7 +107,6 @@ class CompanyViewController: UIViewController {
                         withBlock: { snapshot in
                             company.logo = NSURL(string: (snapshot.value as? String)!)
                             company.annotation = self.createAnnotation(company)
-                            print("company \(snapshot.value["name"] as? String) \(distance)")
                             self.companyView.pageCompanies.append(company)
                             loadedCompanies++
                         }
@@ -157,12 +159,14 @@ extension CompanyViewController: CLLocationManagerDelegate {
     }
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print("Error: " + error.localizedDescription)
-        showLoadingErrorMessage("Sorry, we couldn't find your current location using your GPS, please try again.")
+        let loadingLocStr = NSLocalizedString("loadingError", comment: "Loading error")
+        showLoadingErrorMessage(loadingLocStr)
     }
 }
 
 extension CompanyViewController: CompanyViewDelegate {
     func companySelected(company: Company) {
+        setupNavBar(UIImage(named: "logo-sample-1")!)
         loadVouchers(company.companyId!)
     }
 }

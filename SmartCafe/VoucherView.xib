@@ -9,70 +9,76 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VoucherView" customModule="SmartCafe" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="438" height="405"/>
+            <rect key="frame" x="0.0" y="0.0" width="438" height="471"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <stackView contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LZx-ns-Lwh">
+                    <rect key="frame" x="0.0" y="0.0" width="438" height="110"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIt-KF-Ien">
+                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                            <color key="backgroundColor" red="0.72941176470000002" green="0.57254901960000004" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="UIt-KF-Ien" secondAttribute="height" multiplier="1:1" id="i5u-t6-6H5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                            <state key="normal" title="More">
+                                <color key="titleColor" red="0.1058823529" green="0.039215686270000001" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTU-36-bbc">
+                            <rect key="frame" x="110" y="0.0" width="109" height="110"/>
+                            <color key="backgroundColor" red="0.72941176470000002" green="0.57254901960000004" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                            <state key="normal" title="Claim">
+                                <color key="titleColor" red="0.1058823529" green="0.039215686270000001" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-uQ-ice">
+                            <rect key="frame" x="219" y="0.0" width="110" height="110"/>
+                            <color key="backgroundColor" red="0.72941176470000002" green="0.57254901960000004" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                            <state key="normal" title="Direction">
+                                <color key="titleColor" red="0.1058823529" green="0.039215686270000001" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJA-88-kKw">
+                            <rect key="frame" x="329" y="0.0" width="109" height="110"/>
+                            <color key="backgroundColor" red="0.72941176470000002" green="0.57254901960000004" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                            <state key="normal" title="Website">
+                                <color key="titleColor" red="0.1058823529" green="0.039215686270000001" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </stackView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djm-YL-RvD">
-                    <rect key="frame" x="15" y="89" width="408" height="301"/>
+                    <rect key="frame" x="8" y="118" width="422" height="345"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </scrollView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiC-uq-fzg">
-                    <rect key="frame" x="15" y="8" width="250" height="31"/>
-                    <color key="backgroundColor" red="0.72941176470000002" green="0.57254901960000004" blue="0.37254901959999998" alpha="0.90281883445945943" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
-                    <state key="normal" title="Direction">
-                        <color key="titleColor" red="0.1058823529" green="0.039215686270000001" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="10"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25Q-Sf-scl">
-                    <rect key="frame" x="15" y="47" width="250" height="31"/>
-                    <color key="backgroundColor" red="0.72941176470000002" green="0.57254901960000004" blue="0.37254901959999998" alpha="0.89548141891891897" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
-                    <state key="normal" title="Website">
-                        <color key="titleColor" red="0.1058823529" green="0.039215686270000001" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="10"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-sample-1" translatesAutoresizingMaskIntoConstraints="NO" id="NTJ-ax-L5a">
-                    <rect key="frame" x="273" y="8" width="150" height="73"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="150" id="92H-bY-v4x"/>
-                        <constraint firstAttribute="width" secondItem="NTJ-ax-L5a" secondAttribute="height" multiplier="150:73" id="Ma4-Xf-j48"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="djm-YL-RvD" secondAttribute="trailing" constant="15" id="8xi-tV-nWf"/>
-                <constraint firstItem="djm-YL-RvD" firstAttribute="top" secondItem="NTJ-ax-L5a" secondAttribute="bottom" constant="8" id="9wd-Dk-gvF"/>
-                <constraint firstItem="25Q-Sf-scl" firstAttribute="top" secondItem="eiC-uq-fzg" secondAttribute="bottom" constant="8" id="DL2-Kp-Pzz"/>
-                <constraint firstItem="NTJ-ax-L5a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="PpJ-IG-pIo"/>
-                <constraint firstItem="25Q-Sf-scl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Vee-Ta-gbE"/>
-                <constraint firstItem="eiC-uq-fzg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="XTa-Ay-dio"/>
-                <constraint firstAttribute="trailing" secondItem="NTJ-ax-L5a" secondAttribute="trailing" constant="15" id="gd9-vB-6fd"/>
-                <constraint firstItem="NTJ-ax-L5a" firstAttribute="leading" secondItem="25Q-Sf-scl" secondAttribute="trailing" constant="8" id="iyI-sq-7vR"/>
-                <constraint firstItem="NTJ-ax-L5a" firstAttribute="leading" secondItem="eiC-uq-fzg" secondAttribute="trailing" constant="8" id="jso-fF-YEq"/>
-                <constraint firstAttribute="bottom" secondItem="djm-YL-RvD" secondAttribute="bottom" constant="15" id="u5G-a4-v2T"/>
-                <constraint firstItem="eiC-uq-fzg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="uus-cQ-U6Y"/>
-                <constraint firstItem="djm-YL-RvD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="yHU-Dl-oAv"/>
+                <constraint firstAttribute="bottom" secondItem="djm-YL-RvD" secondAttribute="bottom" constant="8" id="D2s-ga-LmH"/>
+                <constraint firstItem="LZx-ns-Lwh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="E7P-yz-4rg"/>
+                <constraint firstAttribute="trailing" secondItem="djm-YL-RvD" secondAttribute="trailing" constant="8" id="L31-iJ-cHa"/>
+                <constraint firstItem="LZx-ns-Lwh" firstAttribute="leading" secondItem="djm-YL-RvD" secondAttribute="trailing" constant="-423" id="PiB-Jk-UsQ"/>
+                <constraint firstItem="djm-YL-RvD" firstAttribute="top" secondItem="LZx-ns-Lwh" secondAttribute="bottom" constant="8" id="aUw-eP-LcJ"/>
+                <constraint firstAttribute="trailing" secondItem="LZx-ns-Lwh" secondAttribute="trailing" id="fCD-2J-Xe1"/>
+                <constraint firstItem="djm-YL-RvD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="lRc-bz-48f"/>
+                <constraint firstItem="LZx-ns-Lwh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rpT-M8-Hdc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="PiB-Jk-UsQ"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="detailScrollView" destination="djm-YL-RvD" id="PBC-HX-ORG"/>
             </connections>
-            <point key="canvasLocation" x="275" y="70.5"/>
+            <point key="canvasLocation" x="275" y="103.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="logo-sample-1" width="509" height="287"/>
-    </resources>
 </document>

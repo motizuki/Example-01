@@ -19,11 +19,11 @@ class VoucherView: UIView {
             x: 0,
             y: 0,
             width: viewController.view.bounds.maxX,
-            height: viewController.view.bounds.maxY - 90
+            height: viewController.view.bounds.maxY - 60
         )
         layer.position = CGPoint(
             x: viewController.view.bounds.midX,
-            y: viewController.view.bounds.midY + 45
+            y: viewController.view.bounds.midY + 30
         )
         viewController.view.addSubview(self)
     }

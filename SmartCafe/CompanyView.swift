@@ -25,7 +25,6 @@ class CompanyView: UIView {
         companyScrollView.delegate = self
         companyMapView.delegate = self
         clearCompanies()
-        print(pageCompanies.count)
         pageCompanies.forEach { (company) -> () in
             companyMapView.addAnnotation(company.annotation!)
         }
@@ -37,12 +36,12 @@ class CompanyView: UIView {
             x: 0,
             y: 0,
             width: viewController.view.bounds.maxX,
-            height: viewController.view.bounds.maxY - 90
+            height: viewController.view.bounds.maxY - 65
         )
         layer.position = CGPoint(
             x: viewController.view.bounds.midX,
-            y: viewController.view.bounds.midY + 45
-        )
+            y: viewController.view.bounds.midY + 35
+            )
 
         viewController.view.addSubview(self)
     }

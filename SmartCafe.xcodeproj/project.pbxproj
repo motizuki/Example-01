@@ -25,6 +25,8 @@
 		1B78EF6F1C392F680000B723 /* VoucherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78EF6E1C392F680000B723 /* VoucherDetailView.swift */; };
 		1B78EF731C3D14CE0000B723 /* CompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78EF721C3D14CE0000B723 /* CompanyView.swift */; };
 		1B78EF751C3D14E60000B723 /* CompanyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B78EF741C3D14E60000B723 /* CompanyView.xib */; };
+		1B78EF791C4216980000B723 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B78EF7B1C4216980000B723 /* Localizable.strings */; };
+		1B78EF801C421CC70000B723 /* Localizable.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1B78EF7B1C4216980000B723 /* Localizable.strings */; };
 		1BBBAE3E1C2B74F000DCA3CA /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBAE3D1C2B74F000DCA3CA /* CompanyViewController.swift */; };
 		1BBBAE451C2EA84200DCA3CA /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BBBAE441C2EA84200DCA3CA /* LoadingView.xib */; };
 		1BBBAE471C2EA87100DCA3CA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBAE461C2EA87100DCA3CA /* LoadingView.swift */; };
@@ -49,6 +51,19 @@
 			remoteInfo = SmartCafe;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B78EF7E1C421BFA0000B723 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				1B78EF801C421CC70000B723 /* Localizable.strings in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1781978F19851158B24E1385 /* Pods-SmartCafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCafe/Pods-SmartCafe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +91,7 @@
 		1B78EF6E1C392F680000B723 /* VoucherDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoucherDetailView.swift; sourceTree = "<group>"; };
 		1B78EF721C3D14CE0000B723 /* CompanyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyView.swift; sourceTree = "<group>"; };
 		1B78EF741C3D14E60000B723 /* CompanyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyView.xib; sourceTree = "<group>"; };
+		1B78EF7D1C421A8A0000B723 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1BBBAE3D1C2B74F000DCA3CA /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		1BBBAE441C2EA84200DCA3CA /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		1BBBAE461C2EA87100DCA3CA /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -148,6 +164,7 @@
 				1B581F7E1C27E2FB00112447 /* Assets.xcassets */,
 				1B581F801C27E2FB00112447 /* LaunchScreen.storyboard */,
 				1B581F831C27E2FB00112447 /* Info.plist */,
+				1B78EF7B1C4216980000B723 /* Localizable.strings */,
 				1B0AB6591C2FEC32009D9842 /* GoogleService-Info.plist */,
 				1BCB43541C2FBBEE004D2567 /* SmartCafe-Bridging-Header.h */,
 			);
@@ -277,6 +294,7 @@
 				E50811A10636D1A1F12C5A12 /* Embed Pods Frameworks */,
 				A5233ED51FD47D51C3279C46 /* Copy Pods Resources */,
 				1B78EF761C3FB5730000B723 /* ShellScript */,
+				1B78EF7E1C421BFA0000B723 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -329,6 +347,9 @@
 		1B581F6C1C27E2FA00112447 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Gustavo Motizuki";
@@ -373,6 +394,7 @@
 			files = (
 				1B581F821C27E2FB00112447 /* LaunchScreen.storyboard in Resources */,
 				1BBBAE451C2EA84200DCA3CA /* LoadingView.xib in Resources */,
+				1B78EF791C4216980000B723 /* Localizable.strings in Resources */,
 				1B78EF751C3D14E60000B723 /* CompanyView.xib in Resources */,
 				1B0AB65A1C2FEC32009D9842 /* GoogleService-Info.plist in Resources */,
 				1B78EF691C39173B0000B723 /* VoucherView.xib in Resources */,
@@ -526,6 +548,15 @@
 				1B581F811C27E2FB00112447 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1B78EF7B1C4216980000B723 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B78EF7D1C421A8A0000B723 /* en */,
+			);
+			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
