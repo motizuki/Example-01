@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="529" height="636"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="600" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY4-Tv-0Pi">
-                                <rect key="frame" x="15" y="284" width="499" height="293"/>
-                                <string key="text">Proin semper nunc id purus bibendum convallis. Aliquam eu sagittis augue. Praesent massa sapien, faucibus vel varius vel, tempor eget odio. Ut sit amet varius odio.</string>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NO-e1-Ufg">
                                 <rect key="frame" x="30" y="585" width="469" height="36"/>
                                 <color key="backgroundColor" red="0.29259214960000002" green="1" blue="0.59745608230000002" alpha="0.70238597972972971" colorSpace="calibratedRGB"/>
@@ -78,6 +71,13 @@
                                     <constraint firstAttribute="height" constant="20" id="bLt-Ri-yMZ"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="600" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY4-Tv-0Pi">
+                                <rect key="frame" x="15" y="284" width="499" height="293"/>
+                                <string key="text">Proin semper nunc id purus bibendum convallis. Aliquam eu sagittis augue. Praesent massa sapien, faucibus vel varius vel, tempor eget odio. Ut sit amet varius odio.</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="NfB-Lc-NA8" firstAttribute="bottom" secondItem="8Py-So-cU7" secondAttribute="bottom" id="18q-Dx-utq"/>
