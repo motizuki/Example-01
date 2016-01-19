@@ -21,11 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ) -> Bool {
 
         UINavigationBar.appearance().tintColor = Palette.color6
-        // Sets background to a blank/empty image
-//        UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarMetrics: .Default)
-        // Sets shadow (line below the bar) to a blank image
-//        UINavigationBar.appearance().shadowImage = UIImage()
-        // Set translucent. (Default value is already true, so this can be removed if desired.)
+        UINavigationBar.appearance().barTintColor = Palette.color5
         UINavigationBar.appearance().translucent = true
         let font = UIFont(name: "Futura-Medium", size: 18)!
         let uiBarButtonAttrb = [
